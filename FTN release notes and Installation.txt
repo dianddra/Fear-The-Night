@@ -6,6 +6,9 @@ Just drag and drop into your 7 Days To Die\Data folder.
 
 Release Notes:
 
+ver 1.12
+fixed critical error with day 7 type hordes (blood moon hordes)
+
 ver 1.11
 entity group changes
 trader changes
