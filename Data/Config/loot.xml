@@ -1651,7 +1651,7 @@
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
-
+<lootcontainer id="41" count="0" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
 	<item name="cobweb" count="1,2" prob="0.01"/>
 </lootcontainer>
 
@@ -1811,7 +1811,10 @@
 </lootcontainer>
 
 <!-- minibike storage -->
-<lootcontainer id="62" count="0" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+<!-- S420 Start -->
+<!--lootcontainer id="62" count="0" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate"--> <!--Stock-->
+<lootcontainer id="62" count="0" size="9,11" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="baseTemplate">
+<!-- S420 End -->
 </lootcontainer>
 
 <!-- mountain man loot -->
