@@ -1483,7 +1483,7 @@
 <!-- empty, storage containers the player crafts-->
 <!-- S420 Start -->
 <!--lootcontainer id="10" count="0" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate"--> <!--Stock-->
-<lootcontainer id="10" count="0" size="16,11" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+<lootcontainer id="10" count="0" size="14,10" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 <!-- S420 End -->
 	<item name="cobweb" count="1,2"/>
 </lootcontainer>
@@ -1651,10 +1651,7 @@
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
-<!-- S420 Start -->
-<!--lootcontainer id="41" count="0" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate"--> <!--Stock-->
-<lootcontainer id="41" count="0" size="8,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="baseTemplate">
-<!-- S420 End -->
+
 	<item name="cobweb" count="1,2" prob="0.01"/>
 </lootcontainer>
 
