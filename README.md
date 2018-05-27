@@ -4,3 +4,5 @@ Zombies drop coin for you to spend. Prepare your base because the zombies are go
 Pray you survive the night!
 
 You can still grind for resources if you want, but this mod makes it possible to skip the grind by earning money killing zombies and spending it for what you need to build your base. Players are given a special vending machine that sells resources and gear upon completion of a quest. (as of version 1.0)
+
+Forum Thread: https://7daystodie.com/forums/showthread.php?82038-Fear-The-Night-Mod
