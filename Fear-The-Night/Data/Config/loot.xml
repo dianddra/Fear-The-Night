@@ -1481,7 +1481,10 @@
 </lootcontainer>
 
 <!-- empty, storage containers the player crafts-->
-<lootcontainer id="10" count="0" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+<!-- S420 Start -->
+<!--lootcontainer id="10" count="0" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate"--> <!--Stock-->
+<lootcontainer id="10" count="0" size="16,11" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
+<!-- S420 End -->
 	<item name="cobweb" count="1,2"/>
 </lootcontainer>
 

@@ -1,52 +1,22 @@
 <styles>
-
-	<!-- 
-
-		Origin - "7 Days to Die" UI Mod by Tritox:
-
-		Game version:	A16.2(b7)
-		Mod version:	1.01
-		Date:			4.8.2017
-	
-	-->
-
-	<!-- ===================== Mod content starts ===================== -->
-
-	<!-- infopanel.window : Style for day, time, world temperature and elevation window -->
-
-	<style name="infopanel.window" type="window">
-		<style_entry name="pos" value="9,50"/> <!-- 50 for vertical position to hide the waypoints from the screen as they seem to be hardcoded into the CompassWindow-controller -->
-		<style_entry name="size" value="300,80"/>
-		<style_entry name="anchor" value="LeftTop"/>
+<!-- S420 Start-->
+<!-- Increased toolbelt slot size and new holding color - holding color below will change toolbelt holding color. Use a color from this styles.xml below or use an rgb color code. -->
+	<style name="S420itemStack">
+		<style_entry name="select_color" value="[beige]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="[mediumGrey]"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[green]"/>
+		<style_entry name="width" value="82"/>
+		<style_entry name="height" value="82"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
 	</style>
-
-	<!-- tempwaterfood.window : Style for player temperature, water and food window -->
-
-	<style name="tempwaterfood.window" type="window">
-		<style_entry name="pos" value="9,190"/>
-		<style_entry name="anchor" value="LeftBottom"/>
-	</style>
-
-	<!-- xpbar.window : Style for experience bar, player level indicator and toolbelt numbers window -->
-
-	<style name="xpbar.window" type="window">
-		<style_entry name="pos" value="-313, 97"/>
-		<style_entry name="size" value="603,30"/>
-		<style_entry name="anchor" value="CenterBottom"/>
-	</style>
-
-	<!-- buffduration.window : Style for buff durations window -->
-
-	<style name="buffduration.window" type="window">
-		<style_entry name="pos" value="9,593"/>
-		<style_entry name="size" value="132,390"/>
-		<style_entry name="anchor" value="LeftBottom"/>
-	</style>
-
-	<!-- ====================== Mod content ends ====================== -->
-
-	<!-- ====================== styles.xml starts ===================== -->
-
+<!-- S420 End -->
 	<global>
 		<!-- 	
 			GLOBAL STYLE ENTRIES
