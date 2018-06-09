@@ -51,12 +51,12 @@
 	<window name="S420XpBar" width="683" height="12" pos="-323,103" controller="ToolbeltWindow" visible="{ToolbeltVisible}" >
 	
 		<rect pos="-35,12" width="32" height="32" >
-			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_trophy" color="[white_half_alpha]" />
+			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_trophy" color="[black_half_alpha]" />
 			<label depth="6" name="levelNumber" pos="2,-4" width="28" height="28" text="{playerlevel}" color="[white]" justify="center" controller="PlayerStatsWindow" effect="outline" />
 		</rect>
 
 		<rect pos="-35,-65" width="32" height="32" >
-			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_death" color="[white_half_alpha]" />
+			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_death" color="[black_half_alpha]" />
 			<label depth="6" name="deathNumber" pos="2,-4" width="28" height="28" text="{playerdeaths}" color="[white]" justify="center" controller="PlayerStatsWindow" effect="outline" />
 		</rect>
 
@@ -67,12 +67,12 @@
 		</rect>
 
 		<rect pos="685,12" width="32" height="32" >
-			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_zombie" color="[white_half_alpha]" />
+			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_zombie" color="[black_half_alpha]" />
 			<label depth="6" name="ZkillNumber" pos="2,-4" width="28" height="28" text="{playerzombiekills}" color="[white]" justify="center" controller="PlayerStatsWindow" effect="outline" />
 		</rect>
 
 		<rect pos="685,-65" width="32" height="32" >
-			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_knife" color="[white_half_alpha]" />
+			<sprite depth="4" name="windowIcon" width="32" height="32" pos="0,0" sprite="ui_game_symbol_knife" color="[black_half_alpha]" />
 			<label depth="6" name="PkillNumber" pos="2,-4" width="28" height="28" text="{playerpvpkills}" color="[white]" justify="center" controller="PlayerStatsWindow" effect="outline" />
 		</rect>
 	</window>
@@ -81,7 +81,7 @@
 	<window name="S420windowToolbelt" width="683" height="88" depth="5" anchor="CenterBottom" pos="-323, 91" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
 
 		<rect>
-			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[transparent]" type="sliced" fillcenter="false" on_press="true" />
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 			<grid depth="1" name="inventory" rows="1" cols="8" pos="3,-3" cell_width="85" cell_height="85" controller="Toolbelt" repeat_content="true">
 				<S420_item_stack name="0"/>
 			</grid>
@@ -224,7 +224,7 @@
 		</panel>
 		<sprite depth="0" name="gridBackground" color="255,255,255,1" type="sliced" pos="0, 0" globalopacity="true" on_press="true" />
 		<rect name="content" pos="3,-49" >
-			<grid depth="12" name="queue" rows="10" cols="14" cell_width="75" cell_height="75" repeat_content="true" controller="LootContainer">
+			<grid depth="12" name="queue" rows="11" cols="16" cell_width="75" cell_height="75" repeat_content="true" controller="LootContainer">
 				<item_stack name="0"/>
 			</grid>
 		</rect>
@@ -232,7 +232,7 @@
 
 <!-- Expanded Minibike Storage - Part 1 -->
 	<window name="S420windowVehicle" width="380" height="733" panel="Left" controller="VehicleFrameWindow" cursor_area="true" >
-		<panel name="header" pos="-17,40" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+		<panel name="header" pos="-12,40" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_minibike"/>
 			<label style="header.name" text="{vehiclenamequality}" />
 			<sprite depth="2" width="112" pos="260, -17" height="10" type="sliced" color="[black]" />
@@ -241,7 +241,7 @@
 
 		</panel>
 
-		<panel name="content" depth="0" pos="-20,-3" disableautobackground="true">
+		<panel name="content" depth="0" pos="-15,-3" disableautobackground="true">
 			<sprite color="[darkGrey]" pos="3,-3" height="613" />
 			<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="3,-3" width="380" height="733" color="[black]" type="sliced" fillcenter="false" on_press="true" />
 			<rect depth="1" pos="3,-3" width="380" height="739">
@@ -279,7 +279,7 @@
 
 <!-- Expanded Minibike Storage - Part 2 -->
 	<window name="S420windowVehicleStats" width="228" height="200" panel="Left" controller="VehicleStats" cursor_area="true" >
-		<rect name="content" depth="0" pos="135,10" height="200">
+		<rect name="content" depth="0" pos="140,10" height="200">
 			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
 			<sprite depth="1" color="[darkGrey]" type="sliced" width="228" height="197" pos="0,-3" />
 			<rect depth="2" pos="6,-5">
@@ -330,17 +330,17 @@
 	</window>
 
 <!-- Expanded Minibike Storage - Part 3 -->
-	<window name="S420windowVehicleStorage" width="678" height="262" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]" cursor_area="true" >
-		<panel name="header" pos="-5,50" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+	<window name="S420windowVehicleStorage" width="828" height="262" depth="5" anchor="CenterTop" panel="Right" backgroundcolor="[black]" cursor_area="true" >
+		<panel name="header" pos="5,40" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<button depth="1" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
 			<label style="header.name" text="MINIBIKE STORAGE" text_key="xuiMinibikeStorage" />
 		</panel>
 
-		<grid depth="2" name="inventory" rows="11" cols="9" pos="-2,4" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
+		<grid depth="2" name="inventory" rows="12" cols="11" pos="8,-6" cell_width="75" cell_height="75" repeat_content="true" controller="VehicleContainer">
 			<item_stack name="0"/>
 		</grid>
 
-		<panel name="emptyPanel" height="825" depth="4" pos="-5,1" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">
+		<panel name="emptyPanel" height="900" depth="4" pos="5,-9" backgroundcolor="[darkGrey]" bordercolor="[black]" visible="false">
 			<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" />
 			<label pos="0,-180" depth="3" name="descriptionText" width="100%" height="80" text="ADD BASKET TO ACCESS STORAGE." text_key="xuiEmptyVehicleStorage" justify="center" font_size="24"/>
 		</panel>
@@ -805,7 +805,9 @@
 	</window>
 
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
-	<window name="windowBackpack" width="603" height="349" panel="Center" controller="BackpackWindow" cursor_area="true" >
+<!-- S420 Start -->
+	<!--window name="windowBackpack" width="603" height="349" panel="Center" controller="BackpackWindow" cursor_area="true" --> <!--Stock-->
+	<window name="windowBackpack" width="753" height="496" panel="Center" controller="BackpackWindow" cursor_area="true" >
 	<!--#$-IGS END.-$#-->
 		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
 			<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" tooltip_key="lblSortInventory" sound="[paging_click]" />
@@ -815,14 +817,17 @@
 			<sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="577,-10" color="[white]" foregroundlayer="true" />
 		</panel>
 
-		<panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true">
+		<!--panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true"--> <!--Stock-->
+		<panel name="content" width="100%" height="453" depth="0" pos="0,-46" disableautobackground="true">
 				<!-- <sprite name="background" color="[black]" type="sliced" globalopacity="true"/> -->
 				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="303" color="[black]" type="sliced" fillcenter="false" on_press="true" />
-				<grid depth="1" name="inventory" rows="4" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Backpack" repeat_content="true" >
+				<!--grid depth="1" name="inventory" rows="4" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Backpack" repeat_content="true" --> <!--Stock-->
+				<grid depth="1" name="inventory" rows="6" cols="10" pos="3,-3" cell_width="75" cell_height="75" controller="Backpack" repeat_content="true" >
 					<item_stack name="0"/>
 				</grid>
 		</panel>
 	</window>
+<!-- S420 End -->
 
 	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
 	<window name="windowToolsForge" width="228" height="121" panel="Right" cursor_area="true" >
@@ -2795,37 +2800,37 @@
 	</window>
 
 <!-- S420 Start -->
-<!-- Expanded spawn menu now fits 144 entity classes - will even work with a 4:3 resolution -->
-	<window name="spawnMenu" anchor="CenterTop" pos="-600,-80" width="1199" height="860" controller="SpawnMenu">
+<!-- Expanded spawn menu now fits 203 entity classes -->
+	<window name="spawnMenu" anchor="CenterTop" pos="-699,-80" width="1398" height="1000" controller="SpawnMenu">
 		<panel name="header" pos="0,0" height="43" depth="1" disableautobackground="true" >
 			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="0,0" height="43" color="[black]" type="sliced" fillcenter="true" globalopacity="true" globalopacitymod="0.7" />
 			<label style="header.name" pos="6,-6" text_key="xuiSpawnEntities" />
 		</panel>
-		<panel name="content" pos="0,-46" height="810" depth="1" pivot="center" disableautobackground="true" >
-			<sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="810" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
-			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="806" width="1194" color="[darkGrey]" type="sliced" fillcenter="true" globalopacity="true" globalopacitymod="0.65" />
+		<panel name="content" pos="0,-46" height="950" depth="1" pivot="center" disableautobackground="true" >
+			<sprite depth="6" name="border" sprite="menu_empty3px" pos="0,0" height="950" color="[black]" type="sliced" fillcenter="false" globalopacity="true" globalopacitymod="0.9" />
+			<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" pos="2,-2" height="946" width="1393" color="[darkGrey]" type="sliced" fillcenter="true" globalopacity="true" globalopacitymod="0.65" />
 
 			<togglebutton name="toggleLookAtYou" caption_key="xuiSpawnEntitiesLookAtYou" width="192" height="31" pos="7, -7" depth="3" />
 
 			<togglebutton name="toggleSpawn25" caption_key="xuiSpawnEntitiesSpawn25" width="192" height="31" pos="7, -42" depth="3" />
 
-			<togglebutton name="toggleFromDynamic" caption_key="xuiSpawnEntitiesDynamicSpawner" width="192" height="31" pos="603, -42" depth="3" />
+			<togglebutton name="toggleFromDynamic" caption_key="xuiSpawnEntitiesDynamicSpawner" width="192" height="31" pos="802, -42" depth="3" />
 
-			<togglebutton name="toggleFromStatic" caption_key="xuiSpawnEntitiesStaticSpawner" width="192" height="31" pos="802, -42" depth="3" />
+			<togglebutton name="toggleFromStatic" caption_key="xuiSpawnEntitiesStaticSpawner" width="192" height="31" pos="1001, -42" depth="3" />
 
-			<togglebutton name="toggleFromBiome" caption_key="xuiSpawnEntitiesBiomeSpawner" width="192" height="31" pos="1001, -42" depth="3" />
+			<togglebutton name="toggleFromBiome" caption_key="xuiSpawnEntitiesBiomeSpawner" width="192" height="31" pos="1200, -42" depth="3" />
 
-			<grid name="entities" pos="2,-78" rows="24" cols="6" width="1194" height="760" cell_width="199" cell_height="28" repeat_content="true">
+			<grid name="entities" pos="2,-78" rows="29" cols="7" width="1393" height="900" cell_width="199" cell_height="28" repeat_content="true">
 				<simplebutton name="btnSpawn" depth="3" pos="0, 0" width="200" height="28" caption="-SpawnName-" />
 			</grid>
 
-			<simplebutton name="btnLevelStartPoint" depth="3" pos="203, -771" width="190" height="32" caption_key="xuiSpawnEntitiesLevelStartPoint" />
+			<simplebutton name="btnLevelStartPoint" depth="3" pos="303, -911" width="190" height="32" caption_key="xuiSpawnEntitiesLevelStartPoint" />
 
-			<simplebutton name="btnEntitySpawner" depth="3" pos="402, -771" width="190" height="32" caption_key="xuiSpawnEntitiesEntitySpawner" />
+			<simplebutton name="btnEntitySpawner" depth="3" pos="502, -911" width="190" height="32" caption_key="xuiSpawnEntitiesEntitySpawner" />
 
-			<simplebutton name="btnSleeperVolume" depth="3" pos="601, -771" width="190" height="32" caption_key="xuiSpawnEntitiesSleeperVolume" />
+			<simplebutton name="btnSleeperVolume" depth="3" pos="701, -911" width="190" height="32" caption_key="xuiSpawnEntitiesSleeperVolume" />
 
-			<simplebutton name="btnSleeperSpawner" depth="3" pos="800, -771" width="190" height="32" caption_key="xuiSpawnEntitiesSleeperSpawner" />
+			<simplebutton name="btnSleeperSpawner" depth="3" pos="900, -911" width="190" height="32" caption_key="xuiSpawnEntitiesSleeperSpawner" />
 		</panel>
 	</window>
 <!-- S420 End -->
